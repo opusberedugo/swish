@@ -87,7 +87,7 @@ nav .options a:hover {
 section.hero {
   background: url("../img/basketball-25927902.png");
   background-size: cover;
-  padding: 10% 0;
+  padding: 10% 20px;
 }
 section.hero .container {
   text-align: center;
