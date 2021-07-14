@@ -95,6 +95,7 @@ section.hero {
         font-size: 3em;
         @include media-max(735px) {
           font-size: 2em;
+          color: #0a0a0a;
         }
       }
       .button-row {

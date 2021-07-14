@@ -109,6 +109,7 @@ section.hero .container .contents p {
 @media screen and (max-width: 735px) {
   section.hero .container .contents p {
     font-size: 2em;
+    color: #0a0a0a;
   }
 }
 section.hero .container .contents .button-row {
