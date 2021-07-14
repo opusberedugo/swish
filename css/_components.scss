@@ -75,7 +75,7 @@ nav {
 }
 
 section.hero {
-  background: url("../img/basketball-25927902.png");
+  background: url("../img/basketball-25927903.png");
   background-size: cover;
   padding: 10% 20px;
   .container {
@@ -85,6 +85,7 @@ section.hero {
         font-size: 5em;
         color: $orange;
         text-transform: uppercase;
+        font-weight: 600;
         @include media-max(735px) {
           font-size: 4em;
         }
