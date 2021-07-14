@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, Montserrat, Jost;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  left: 0;
+  background-color: #050505;
+  color: white;
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+}
+@media screen and (max-width: 735px) {
+  nav {
+    display: block;
+  }
+}
+@media screen and (max-width: 735px) {
+  nav .brand {
+    display: flex;
+  }
+}
+nav .brand .logo a img {
+  width: 3em;
+  margin-left: 10px;
+}
+nav .brand .burger {
+  display: none;
+  padding: 10px;
+}
+@media screen and (max-width: 735px) {
+  nav .brand .burger {
+    display: inherit;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+nav .brand .burger button {
+  background-color: #050505;
+  border: none;
+  cursor: pointer;
+}
+nav .brand .burger button svg path {
+  fill: white;
+}
+nav .options {
+  background-color: #050505;
+  margin-left: auto;
+}
+@media screen and (max-width: 735px) {
+  nav .options {
+    margin-left: 0;
+    display: none;
+  }
+}
+nav .options a {
+  color: white;
+  padding: 20px;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+nav .options a:hover {
+  color: black;
+  background-color: white;
+}
+@media screen and (max-width: 735px) {
+  nav .options a {
+    display: block;
+  }
+}
+
+section.hero {
+  background: url("../img/basketball-25927902.png");
+  background-size: cover;
+  padding: 10% 0;
+}
+section.hero .container {
+  text-align: center;
+}
+section.hero .container .contents .d1 {
+  font-size: 5em;
+  color: #ff7904;
+  text-transform: uppercase;
+}
+section.hero .container .contents p {
+  font-size: 3em;
+}
+section.hero .container .contents .button-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section.hero .container .contents .button-row button {
+  background-color: #478e66;
+  border: none;
+  padding: 20px 60px;
+  color: white;
+  font-size: 1em;
+}
+section.hero .container .contents .button-row button:hover {
+  background-color: #3c7c58;
+}
+
+/*# sourceMappingURL=main.css.map */
