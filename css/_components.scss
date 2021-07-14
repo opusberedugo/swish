@@ -85,20 +85,35 @@ section.hero {
         font-size: 5em;
         color: $orange;
         text-transform: uppercase;
+        @include media-max(735px) {
+          font-size: 4em;
+        }
       }
       p {
         // color: #757373;
         font-size: 3em;
+        @include media-max(735px) {
+          font-size: 2em;
+        }
       }
       .button-row {
         margin-top: 20px;
         margin-bottom: 20px;
+        @include media-max(735px) {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          padding: 10px;
+        }
         button {
           background-color: $green;
           border: none;
           padding: 20px 60px;
           color: white;
           font-size: 1em;
+          @include media-max(735px) {
+            margin-top: 30px;
+          }
           &:hover {
             background-color: $green-dark;
           }
