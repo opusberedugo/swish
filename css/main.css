@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: Poppins, Montserrat, Jost;
+  outline: none;
 }
 
 a {
@@ -139,6 +140,82 @@ section.hero .container .contents .button-row button {
 }
 section.hero .container .contents .button-row button:hover {
   background-color: #3c7c58;
+}
+
+footer {
+  margin-top: 20px;
+}
+footer marquee img {
+  width: 50px;
+}
+footer form {
+  padding: 5% 10%;
+  background-color: #050505;
+}
+footer form h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+}
+footer form .inputs {
+  display: flex;
+  justify-content: center;
+}
+footer form .inputs input {
+  flex-grow: 1;
+  padding: 20px 10px;
+  font-size: 1em;
+}
+footer form .inputs button {
+  padding: 0 20px;
+  margin-left: 10px;
+  background-color: #478e66;
+  color: white;
+  border: none;
+}
+footer .btm-nav {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  footer .btm-nav {
+    display: block;
+  }
+}
+footer .btm-nav .links {
+  padding: 10px;
+  margin-right: auto;
+}
+footer .btm-nav .links .copyright {
+  padding: 10px;
+}
+footer .btm-nav .links a {
+  color: black;
+  padding: 20px;
+}
+@media screen and (max-width: 800px) {
+  footer .btm-nav .links a {
+    display: block;
+  }
+}
+footer .btm-nav .links a:hover {
+  text-decoration: underline;
+  color: #ff7904;
+}
+footer .btm-nav .social-handles {
+  margin-right: 10px;
+}
+@media screen and (max-width: 800px) {
+  footer .btm-nav .social-handles {
+    padding: 20px;
+  }
+}
+footer .btm-nav .social-handles a svg path {
+  fill: #478e66;
 }
 
 /*# sourceMappingURL=main.css.map */
