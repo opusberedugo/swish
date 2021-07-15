@@ -152,7 +152,7 @@ footer form {
   padding: 5% 10%;
   background-color: #050505;
 }
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 400px) {
   footer form {
     padding: 20px;
   }
@@ -168,7 +168,7 @@ footer form .inputs {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 400px) {
   footer form .inputs {
     display: block;
   }
@@ -178,7 +178,7 @@ footer form .inputs input {
   padding: 20px 10px;
   font-size: 1em;
 }
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 400px) {
   footer form .inputs input {
     width: -webkit-fill-available;
     display: block;
@@ -192,7 +192,7 @@ footer form .inputs button {
   color: white;
   border: none;
 }
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 400px) {
   footer form .inputs button {
     display: block;
     width: 100%;

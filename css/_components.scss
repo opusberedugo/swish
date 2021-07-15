@@ -136,7 +136,7 @@ footer {
   form {
     padding: 5% 10%;
     background-color: $black;
-    @include media-max(310px) {
+    @include media-max(400px) {
       padding: 20px;
     }
     h2 {
@@ -149,14 +149,14 @@ footer {
     .inputs {
       display: flex;
       justify-content: center;
-      @include media-max(310px) {
+      @include media-max(400px) {
         display: block;
       }
       input {
         flex-grow: 1;
         padding: 20px 10px;
         font-size: 1em;
-        @include media-max(310px) {
+        @include media-max(400px) {
           width: -webkit-fill-available;
           display: block;
           margin-bottom: 10px;
@@ -168,7 +168,7 @@ footer {
         background-color: $green;
         color: white;
         border: none;
-        @include media-max(310px) {
+        @include media-max(400px) {
           display: block;
           width: 100%;
           margin: 0;
