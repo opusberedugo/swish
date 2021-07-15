@@ -96,7 +96,7 @@ section.hero .container .contents .d1 {
   font-size: 5em;
   color: #ff7904;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
 }
 @media screen and (max-width: 735px) {
   section.hero .container .contents .d1 {
@@ -105,12 +105,12 @@ section.hero .container .contents .d1 {
 }
 section.hero .container .contents p {
   font-size: 3em;
+  font-weight: 600;
 }
 @media screen and (max-width: 735px) {
   section.hero .container .contents p {
     font-size: 2em;
     color: #0a0a0a;
-    font-weight: 600;
   }
 }
 section.hero .container .contents .button-row {
