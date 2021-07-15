@@ -1,203 +1,220 @@
-  @import "reset";
-  @import "media";
-  @import "fonts";
-  @import "variables";
-  nav {
-    position: sticky;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    left: 0;
-    background-color: #050505;
-    color: white;
-    display: flex;
-    padding: 10px 0;
-    align-items: center;
-    align-content: center;
-    flex-direction: row;
+@import "reset";
+@import "media";
+@import "fonts";
+@import "variables";
+nav {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  left: 0;
+  background-color: #050505;
+  color: white;
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  @include media-max(735px) {
+    display: block;
+  }
+  .brand {
     @include media-max(735px) {
-      display: block;
-    }
-    .brand {
-      @include media-max(735px) {
-        display: flex;
-      }
-      .logo {
-        @include media-max(735px) {}
-        a {
-          img {
-            width: 3em;
-            margin-left: 10px;
-          }
-        }
-      }
-      .burger {
-        display: none;
-        padding: 10px;
-        @include media-max(735px) {
-          display: inherit;
-          margin-left: auto;
-          margin-right: 20px;
-        }
-        button {
-          background-color: #050505;
-          border: none;
-          cursor: pointer;
-          svg {
-            path {
-              fill: white;
-            }
-          }
-        }
-      }
-    }
-    .options {
-      background-color: #050505;
-      margin-left: auto;
-      @include media-max(735px) {
-        margin-left: 0;
-        display: none;
-      }
-      a {
-        color: white;
-        padding: 20px;
-        transition-property: all;
-        transition-duration: 0.3s;
-        &:hover {
-          color: black;
-          background-color: white;
-        }
-        @include media-max(735px) {
-          display: block;
-        }
-      }
-    }
-  }
-  
-  section.hero {
-    background: url("../img/basketball-25927905.png");
-    background-size: cover;
-    padding: 10% 20px;
-    .container {
-      text-align: center;
-      .contents {
-        .d1 {
-          font-size: 5em;
-          color: $orange;
-          text-transform: uppercase;
-          font-weight: 800;
-          @include media-max(735px) {
-            font-size: 4em;
-          }
-        }
-        p {
-          // color: #757373;
-          font-size: 3em;
-          font-weight: 600;
-          @include media-max(735px) {
-            font-size: 2em;
-            color: #0a0a0a;
-          }
-        }
-        .button-row {
-          margin-top: 20px;
-          margin-bottom: 20px;
-          @include media-max(735px) {
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            padding: 10px;
-          }
-          button {
-            background-color: $green;
-            border: none;
-            padding: 20px 60px;
-            color: white;
-            font-size: 1em;
-            @include media-max(735px) {
-              margin-top: 30px;
-            }
-            &:hover {
-              background-color: $green-dark;
-            }
-          }
-        }
-      }
-    }
-  }
-  
-  footer {
-    margin-top: 20px;
-    marquee {
-      img {
-        width: 50px;
-      }
-    }
-    form {
-      padding: 5% 10%;
-      background-color: $black;
-      h2 {
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: 700;
-        color: white;
-        margin-bottom: 20px;
-      }
-      .inputs {
-        display: flex;
-        justify-content: center;
-        input {
-          flex-grow: 1;
-          padding: 20px 10px;
-          font-size: 1em;
-        }
-        button {
-          padding: 0 20px;
-          margin-left: 10px;
-          background-color: $green;
-          color: white;
-          border: none;
-        }
-      }
-    }
-    .btm-nav {
       display: flex;
-      margin-top: 10px;
-      flex-direction: row;
-      align-items: center;
-      @include media-max(800px) {
+    }
+    .logo {
+      @include media-max(735px) {}
+      a {
+        img {
+          width: 3em;
+          margin-left: 10px;
+        }
+      }
+    }
+    .burger {
+      display: none;
+      padding: 10px;
+      @include media-max(735px) {
+        display: inherit;
+        margin-left: auto;
+        margin-right: 20px;
+      }
+      button {
+        background-color: #050505;
+        border: none;
+        cursor: pointer;
+        svg {
+          path {
+            fill: white;
+          }
+        }
+      }
+    }
+  }
+  .options {
+    background-color: #050505;
+    margin-left: auto;
+    @include media-max(735px) {
+      margin-left: 0;
+      display: none;
+    }
+    a {
+      color: white;
+      padding: 20px;
+      transition-property: all;
+      transition-duration: 0.3s;
+      &:hover {
+        color: black;
+        background-color: white;
+      }
+      @include media-max(735px) {
         display: block;
       }
-      .links {
-        padding: 10px;
-        margin-right: auto;
-        .copyright {
-          padding: 10px;
-        }
-        a {
-          color: black;
-          padding: 20px;
-          @include media-max(800px) {
-            display: block;
-          }
-          &:hover {
-            text-decoration: underline;
-            color: $orange;
-          }
+    }
+  }
+}
+
+section.hero {
+  background: url("../img/basketball-25927905.png");
+  background-size: cover;
+  padding: 10% 20px;
+  .container {
+    text-align: center;
+    .contents {
+      .d1 {
+        font-size: 5em;
+        color: $orange;
+        text-transform: uppercase;
+        font-weight: 800;
+        @include media-max(735px) {
+          font-size: 4em;
         }
       }
-      .social-handles {
-        margin-right: 10px;
-        @include media-max(800px) {
-          padding: 20px;
+      p {
+        // color: #757373;
+        font-size: 3em;
+        font-weight: 600;
+        @include media-max(735px) {
+          font-size: 2em;
+          color: #0a0a0a;
         }
-        a {
-          svg {
-            path {
-              fill: $green;
-            }
+      }
+      .button-row {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        @include media-max(735px) {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          padding: 10px;
+        }
+        button {
+          background-color: $green;
+          border: none;
+          padding: 20px 60px;
+          color: white;
+          font-size: 1em;
+          @include media-max(735px) {
+            margin-top: 30px;
+          }
+          &:hover {
+            background-color: $green-dark;
           }
         }
       }
     }
   }
+}
+
+footer {
+  margin-top: 20px;
+  marquee {
+    img {
+      width: 50px;
+    }
+  }
+  form {
+    padding: 5% 10%;
+    background-color: $black;
+    @include media-max(310px) {
+      padding: 20px;
+    }
+    h2 {
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 20px;
+    }
+    .inputs {
+      display: flex;
+      justify-content: center;
+      @include media-max(310px) {
+        display: block;
+      }
+      input {
+        flex-grow: 1;
+        padding: 20px 10px;
+        font-size: 1em;
+        @include media-max(310px) {
+          width: -webkit-fill-available;
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+      button {
+        padding: 0 20px;
+        margin-left: 10px;
+        background-color: $green;
+        color: white;
+        border: none;
+        @include media-max(310px) {
+          display: block;
+          width: 100%;
+          margin: 0;
+          padding: 20px 10px;
+        }
+      }
+    }
+  }
+  .btm-nav {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    align-items: center;
+    @include media-max(800px) {
+      display: block;
+    }
+    .links {
+      padding: 10px;
+      margin-right: auto;
+      .copyright {
+        padding: 10px;
+      }
+      a {
+        color: black;
+        padding: 20px;
+        @include media-max(800px) {
+          display: block;
+        }
+        &:hover {
+          text-decoration: underline;
+          color: $orange;
+        }
+      }
+    }
+    .social-handles {
+      margin-right: 10px;
+      @include media-max(800px) {
+        padding: 20px;
+      }
+      a {
+        svg {
+          path {
+            fill: $green;
+          }
+        }
+      }
+    }
+  }
+}
