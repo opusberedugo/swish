@@ -85,7 +85,7 @@ section.hero {
         font-size: 5em;
         color: $orange;
         text-transform: uppercase;
-        font-weight: 600;
+        font-weight: 700;
         @include media-max(735px) {
           font-size: 4em;
         }
@@ -96,7 +96,7 @@ section.hero {
         @include media-max(735px) {
           font-size: 2em;
           color: #0a0a0a;
-          // font-weight: 600;
+          font-weight: 600;
         }
       }
       .button-row {
