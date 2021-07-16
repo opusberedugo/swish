@@ -157,7 +157,7 @@ footer {
         padding: 20px 10px;
         font-size: 1em;
         @include media-max(400px) {
-          width: -webkit-fill-available;
+          width: 100%;
           display: block;
           margin-bottom: 10px;
         }
