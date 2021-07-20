@@ -1,0 +1,32 @@
+@import "../../css/main";
+@import "../../css/media";
+// @mixin media-max($width) {
+//   @media screen and (max-width: $width) {
+//     @content;
+//   }
+// }
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  @include media-max(400px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team {
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 1.1em;
+    & :hover {
+      transform: scale(1.1);
+      transition-duration: 500ms;
+    }
+    .img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

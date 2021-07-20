@@ -316,4 +316,30 @@ section.latest-news .news .other-news .new-news .date {
   color: #b9b9b9;
 }
 
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+@media screen and (max-width: 400px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+main .team {
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+main .team :hover {
+  transform: scale(1.1);
+  transition-duration: 500ms;
+}
+main .team .img img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=main.css.map */
