@@ -271,14 +271,12 @@
   <!-- Footer -->
 
 
-  <!-- 
+  <script src="../js/jquery-3.6.0.js"></script>
   <script>
-    let allTeamNames = document.querySelectorAll(".team-name");
-
-    allTeamNames.forEach((value) => {
-      value.textContent = "Team Name"
+    document.querySelector(".burger button").addEventListener("click", () => {
+      $("nav .options").slideToggle(1000);
     })
-  </script> -->
+  </script>
 </body>
 
 </html>
